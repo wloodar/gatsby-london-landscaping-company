@@ -1,0 +1,89 @@
+.center {
+    text-align: center;
+}
+
+.flex-center {
+    @include flex-justify-content(center);
+}
+
+.fadeComponent {
+    @include transition(100ms opacity ease);
+    @include transition(100ms transform ease);   
+
+    &__long {
+        @include transition(.4s opacity ease-out);
+        @include transition(.4s transform ease-out);   
+    }
+}
+
+.btn {
+    padding: 2rem 4.2rem;
+    box-sizing: border-box;
+    font-size: 1.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+    text-transform: uppercase;
+    @include transition(.3s all ease);
+
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.btnWhite {
+    background: #fff;
+    color: #000;
+
+    &:hover {
+        background: #f4f4f4;
+    }
+}
+
+.btnDark {
+    background: #222;
+    color: #fff;
+
+    &:hover {
+        background: #000;
+    }
+}
+
+.btn-primary-bright {
+    background: var(--color-primary-bright);
+    color: var(--color-primary);
+}
+
+.btnBorder {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    @include transition(.3s all ease);
+
+    &:hover {
+        background: var(--color-primary);
+        color: #fff;
+    }
+}
+
+.lineParent{
+    overflow: hidden;
+    
+    .lineChildren{
+        transform: translate(0, 500px);
+    }
+}
+
+// .btn-border {
+//     border: 1px solid var(--surface-background);
+//     color: var(--color-dark);
+//     background: #fff;
+
+//     &:hover {
+//         background: #fbfbfb;
+//         color: var(--color-primary);
+//     }
+// }

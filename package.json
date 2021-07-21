@@ -8,7 +8,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "compile-sass": "node-sass -w src/sass/app.scss src/styles/app.css --output-style compressed",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "fulldev": "gatsby develop & compile-sass",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -21,12 +23,16 @@
     "gatsby-plugin-image": "^1.10.0",
     "gatsby-plugin-mdx": "^2.10.0",
     "gatsby-plugin-react-helmet": "^4.10.0",
+    "gatsby-plugin-sass": "^4.10.0",
     "gatsby-plugin-sharp": "^3.10.0",
     "gatsby-plugin-sitemap": "^4.6.0",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-transformer-sharp": "^3.10.0",
+    "gsap": "^3.7.1",
+    "node-sass": "^6.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.35.2"
   }
 }
