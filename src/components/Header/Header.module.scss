@@ -7,26 +7,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
 
     &__overlay {
         width: 100%;
         height: 100%;
-        background: rgba($color: #fff, $alpha: .75);
+        // background: rgba($color: #fff, $alpha: .75);
         position: relative;
     }
 
     h1 {
         @include absoluteCenter();
-        font-size: 7vw;
+        font-size: 5vw;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 500;
         text-align: center;
         line-height: 1;
+        letter-spacing: 24px;
 
         span {
             display: block;
             font-size: 2.4rem;
             text-transform: none;
+            letter-spacing: 5px;
         }
     }
 
@@ -34,5 +37,13 @@
         @include absoluteCenter();
         top: 65%;
         opacity: 0;
+    }
+
+
+    &__pic1 {
+        position: absolute;
+        max-width: 40rem;
+        left: 5.4rem;
+        top: 4.7rem;
     }
 }

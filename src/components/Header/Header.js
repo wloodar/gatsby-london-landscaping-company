@@ -3,6 +3,7 @@ import * as s from './Header.module.scss';
 
 import gsap from 'gsap';
 import SplitText from '../../utils/Split3.min';
+import FirstPic from '../../images/london-landscaping-beautiful-garden-renovation.jpg';
 
 function Header() {
 
@@ -37,6 +38,10 @@ function Header() {
 
     return (
         <header className={s.header}>
+            <div className={s.header__pic1}>
+                <img src={FirstPic} alt="" />
+            </div>
+
             <div className={s.header__overlay}>
                 <h1 ref={headerTextRef}>
                     ESlandscapesltd

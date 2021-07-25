@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby-london-landscaping-company",
+    siteUrl: "https://eslandscapesltd.co.uk",
+    author: '@wloodar',
+    title: "London Landscaping & Garden Maintenance | ESlandscapesLTD",
+    description: "ESlandscapesltd is innovative landscape company established in London. Working hard to make London's gardens the most beautiful gardens in the entire world."
   },
   plugins: [
     "gatsby-plugin-image",
